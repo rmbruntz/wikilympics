@@ -38,7 +38,10 @@ export function Match(props) {
 
 function Round(props) {
 
-    const { data, error } = useSWR(['/api/matchquote', props.tot], fetcher)
+    const { data, error } = useSWR(['/api/matchquote', props.tot], fetcher, {
+        revalidateOnFocus: false,
+        revalidateOnReconnect: false,
+    })
 
     if (!data || error) return (
 
