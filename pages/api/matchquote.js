@@ -25,7 +25,6 @@ export default async (req, res) => {
 
   const names = random.slice(1, random.length).map((entry) => entry.title);
 
-
   res.statusCode = 200
   res.json({
     quote: mysteryLink,
