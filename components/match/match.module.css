@@ -1,4 +1,30 @@
 
 .matchGame {
-    color: red;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.score {
+
+}
+
+.round {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.quote {
+    width: 200px;
+}
+
+.answers {
+    display: flex;
+    flex-direction: column;
+}
+
+.answer {
+    margin: 5px;
 }
